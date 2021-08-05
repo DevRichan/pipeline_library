@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const connection = require('./connection');
 // const contentRoute = require('')
 
 const app = express();
@@ -14,4 +15,4 @@ app.get('/hello',(req,res) => {
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
-  });
+});
